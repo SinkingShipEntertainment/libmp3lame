@@ -4,7 +4,7 @@ name = "libmp3lame"
 version = "3.99.5"
 
 authors = [
-    "FFmpeg"
+    "Mark Taylor",
 ]
 
 description = \
@@ -49,3 +49,4 @@ def pre_build_commands():
 def commands():
     env.PATH.prepend("{root}/bin")
     env.LD_LIBRARY_PATH.append("{root}/lib")
+    env.CPLUS_INCLUDE_PATH.append("{root}/include")
