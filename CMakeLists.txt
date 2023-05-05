@@ -18,7 +18,7 @@ ExternalProject_add(
     SOURCE_DIR ${CMAKE_SOURCE_DIR}
     PREFIX libmp3lame
     UPDATE_COMMAND ""
-    CONFIGURE_COMMAND ${CMAKE_SOURCE_DIR}/configure --prefix=${CMAKE_INSTALL_PREFIX}
+    CONFIGURE_COMMAND ${CMAKE_SOURCE_DIR}/configure --prefix=${CMAKE_INSTALL_PREFIX} --enable-nasm
     INSTALL_COMMAND "${install_cmd}"
     BUILD_IN_SOURCE 0
     BUILD_COMMAND make ${make_args}

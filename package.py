@@ -1,7 +1,6 @@
 name = "libmp3lame"
 
-# Remember to modify the commands function here
-version = "3.99.5"
+version = "3.99.5.sse.1.0.0"
 
 authors = [
     "Mark Taylor",
@@ -28,6 +27,7 @@ with scope("config") as c:
         c.release_packages_path = os.environ["SSE_REZ_REPO_RELEASE_EXT"]
 
 requires = [
+    "nasm",
 ]
 
 private_build_requires = [
